@@ -1,0 +1,195 @@
+body {
+  margin: 0 auto;
+  font-family: "Brandon Grotesque";
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: lighter;
+  letter-spacing: -1.5px;
+  margin-top: 0;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../fonts/Brandon_light.otf") format("opentype");
+}
+
+header {
+  background: url("../img/home-bg.png");
+  background-color: antiquewhite;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  min-height: 700px;
+  color: #d4d4d4;
+}
+
+.container, .text-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+nav {
+  min-width: 365px;
+}
+
+nav ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #d4d4d4;
+}
+
+nav ul li a:hover {
+  color: #777777;
+}
+
+.page-logo {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-container {
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.content p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+  letter-spacing: -0.8px;
+}
+
+.content h1 {
+  font-size: 66px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -1.65px;
+}
+
+.content .btn {
+  font-size: 23px;
+  font-weight: bold;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  min-width: 240px;
+  min-height: 65px;
+  color: #d4d4d4;
+  background: transparent;
+}
+
+.content .btn:hover {
+  background: #777777;
+}
+
+.global-container, .nested-container, .nested-container-skills, .nested-container-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.nested-container, .nested-container-skills, .nested-container-clients {
+  justify-content: space-between;
+  max-width: 940px;
+  min-width: 850px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  align-items: start;
+}
+
+.content-text {
+  max-width: 555px;
+}
+
+.content-text p {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.45px;
+  font-weight: normal;
+}
+
+.bg-colored {
+  background-color: #fafafa;
+}
+
+.bg-colored .content-icon {
+  order: -1;
+}
+
+.bg-colored .content-text {
+  max-width: 515px;
+}
+
+.nested-container-skills {
+  flex-wrap: wrap;
+  max-width: 850px;
+}
+
+.content-item {
+  flex-basis: 45%;
+  display: flex;
+  box-sizing: padding-box;
+}
+
+.content-text-skills {
+  padding-left: 20px;
+}
+
+.content-text-skills h3 {
+  color: #222222;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.content-text-skills p {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.45px;
+}
+
+.content-icon-skills {
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 50%;
+  background-color: black;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.content-icon-skills img {
+  align-self: center;
+}
+
+.nested-container-clients {
+  flex-wrap: wrap;
+  justify-content: center;
+}

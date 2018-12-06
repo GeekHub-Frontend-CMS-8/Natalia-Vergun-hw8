@@ -1,0 +1,69 @@
+header
+  background: url("../img/home-bg.png")
+  background-color: antiquewhite
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 50px
+  padding-left: 30px
+  padding-right: 30px
+  min-height: 700px
+  color: $main-inversed-color
+
+.container
+  display: flex
+  flex-wrap: nowrap
+  justify-content: space-between
+  align-items: center
+  margin: 0 auto
+  max-width: 940px
+
+nav
+  min-width: 365px
+  ul
+    padding-left: 0
+    margin-top: 0
+    margin-bottom: 0
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    li
+      list-style-type: none
+      a
+        color: $main-inversed-color
+        &:hover
+          color: $main-text-color
+
+.page-logo
+  font-size: 25px
+  font-weight: bold
+  text-transform: uppercase
+
+.text-container
+  @extend .container
+  justify-content: center
+
+.content
+  text-align: center
+  padding-top: 150px
+  p
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 32px
+    letter-spacing: -0.8px
+  h1
+    font-size: 66px
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: -1.65px
+  .btn
+    font-size: 23px
+    font-weight: bold
+    border: 1px solid $main-inversed-color
+    border-radius: 2px
+    min-width: 240px
+    min-height: 65px
+    color: $main-inversed-color
+    background: transparent
+    &:hover
+      background: $main-text-color

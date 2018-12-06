@@ -1,0 +1,68 @@
+
+.global-container
+  display: flex
+  justify-content: center
+
+.nested-container
+  @extend .global-container
+  justify-content: space-between
+  max-width: 940px
+  min-width: 850px
+  padding-top: 80px
+  padding-bottom: 80px
+  align-items: start
+
+.content-text
+  max-width: 555px
+  p
+    font-size: 18px
+    line-height: 24px
+    letter-spacing: -0.45px
+    font-weight: normal
+
+.bg-colored
+  background-color: $bg-color
+  .content-icon
+    order: -1
+  .content-text
+    max-width: 515px
+
+.nested-container-skills
+  @extend .nested-container
+  flex-wrap: wrap
+  max-width: 850px
+
+.content-item
+  flex-basis: 45%
+  display: flex
+  box-sizing: padding-box
+
+.content-text-skills
+  padding-left: 20px
+  p
+  h3
+    color: $main-headers-color
+    font-size: 22px
+    font-weight: bold
+  p
+    font-size: 18px
+    line-height: 18px
+    letter-spacing: -0.45px
+
+.content-icon-skills
+  min-width: 70px
+  min-height: 70px
+  border-radius: 50%
+  background-color: black
+  align-self: center
+  display: flex
+  justify-content: center
+  img
+    align-self: center
+
+.nested-container-clients
+  @extend .nested-container
+  flex-wrap: wrap
+  justify-content: center
+  h2
+
