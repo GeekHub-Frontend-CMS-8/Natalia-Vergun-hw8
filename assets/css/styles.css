@@ -34,6 +34,11 @@ h2 {
   src: url("../fonts/Brandon_light.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'Cubano', sans-serif;
+  src: url("../fonts/Cubano-Regular.otf") format("opentype");
+}
+
 header {
   background: url("../img/home-bg.png");
   background-color: antiquewhite;
@@ -615,8 +620,10 @@ nav {
 }
 
 .page-logo {
-  font-size: 25px;
+  font-family: 'Cubano', sans-serif;
+  font-size: 18px;
   font-weight: bold;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #d4d4d4;
 }
