@@ -1,0 +1,86 @@
+// Сетка
+.area
+  display: flex
+  margin-right: auto
+  margin-left: auto
+  flex-flow: row wrap
+  align-items: stretch
+  @media (min-width: 320px)
+    width: 290px
+  @media (min-width: 411px)
+    width: 390px
+  @media (min-width: 544px)
+    width: 520px
+  @media (min-width: 768px)
+    width: 750px
+  @media (min-width: 992px)
+    width: 940px
+  @media (min-width: 1200px)
+    width: 940px
+
+nav
+  min-width: 365px
+
+.navbar
+  justify-content: space-between
+
+.list
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: space-around
+
+.item-link
+  display: block
+  // Возможность элемента сжиматься
+  flex-shrink: 0 // запрещено
+  color: $main-inversed-color
+  font-size: 18px
+  line-height: 41px
+  &:hover
+    color: $main-text-color
+  @media (min-width: 320px)
+    display: none
+  @media (min-width: 411px)
+    display: none
+  @media (min-width: 544px)
+    display: none
+  @media (min-width: 768px)
+    display: block
+  @media (min-width: 992px)
+    display: block
+  @media (min-width: 1200px)
+    display: block
+
+.page-logo
+  font-size: 25px
+  font-weight: bold
+  text-transform: uppercase
+  color: $main-inversed-color
+
+.toggle
+  border: 0
+  background-color: transparent
+  display: inline-block
+  outline: none
+  vertical-align: middle
+  text-align: center
+  white-space: nowrap
+  cursor: pointer
+  touch-action: manipulation
+  user-select: none
+  color: $main-inversed-color
+  @media (min-width: 320px)
+    display: flex
+  @media (min-width: 411px)
+    display: flex
+  @media (min-width: 544px)
+    display: flex
+  @media (min-width: 768px)
+    display: none
+  @media (min-width: 992px)
+    display: none
+  @media (min-width: 1200px)
+    display: none
+
+

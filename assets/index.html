@@ -6,22 +6,27 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>HW8</title>
+</head>
 <body>
 <header>
-    <div class="container">
-        <div class="page-logo">
-            <i class="fas fa-paper-plane"></i>
-            <span>escape</span>
+    <div class="navbar-component">
+        <div class="navbar area">
+            <a href="#">
+                <div class="page-logo">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>escape</span>
+                </div></a>
+            <nav role="navigation" id="navigation" class="list">
+                <a href="#" class="item-link">Home</a>
+                <a href="#services" class="item-link">Services</a>
+                <a href="#clients" class="item-link">Clients</a>
+                <a href="#team" class="item-link">Team</a>
+                <a href="#contact" class="item-link">Contact</a>
+            </nav>
+            <button data-collapse data-target="#navigation" class="toggle">
+                <span class="icon-hamburger"><i class="fas fa-bars"></i></span>
+            </button>
         </div>
-        <nav>
-            <ul>
-                <li class=><a href="#">Home</a></li>
-                <li class=><a href="#services">Services</a></li>
-                <li class=><a href="#">Clients</a></li>
-                <li class=><a href="#">Team</a></li>
-                <li class=><a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </div>
     <div class="text-container">
         <div class="content">
@@ -33,7 +38,7 @@
 </header>
 
 
-<section class="global-container">
+<section class="global-container" id="services">
     <div class="nested-container">
         <div class="content-text">
             <h2>Web <strong>Development</strong></h2>
@@ -46,6 +51,7 @@
         </div>
     </div>
 </section>
+
 <section class="global-container bg-colored">
     <div class="nested-container">
         <div class="content-text">
@@ -131,41 +137,65 @@
 </section>
 
 
-<section class="global-container">
+<section class="global-container clients" id="clients">
     <div class="nested-container-clients">
         <h2>Awesome <strong>Clients</strong></h2>
-        <p>See what nice things our clients said about us. </p>
-        <div><img src="" alt="">
-            <blockquote></blockquote>
+        <p class="subtitle">See what nice things our clients said about us. </p>
+        <div class="content-item-clients"><img src="img/Clipping_Mask.png" alt="photo">
+            <div class="blockquote"><blockquote>“ Proin iaculis purus consequat sem cure  digni ssim
+                donec porttitora entum suscipit aenean rhoncus. ” </blockquote>
+            <p>- Jamie Richardson, Founder of Cocoa Media</p>
+            </div>
         </div>
-        <div><img src="" alt="">
-            <blockquote></blockquote>
-    </div>
-    </div>
-</section>
-<section class="logos">
-    <div><img src="" alt=""></div>
-    <div><img src="" alt=""></div>
-    <div><img src="" alt=""></div>
-    <div><img src="" alt=""></div>
-</section>
-<section class="team">
-    <h2></h2>
-    <p></p>
-    <div><img src="" alt="">
-        <p></p>
-        <p></p>
-    </div>
-    <div><img src="" alt="">
-        <p></p>
-        <p></p>
-    </div>
-    <div><img src="" alt="">
-        <p></p>
-        <p></p>
+        <div class="content-item-clients"><img src="img/Clipping_Mask.png" alt="photo" class="reverse">
+            <div class="blockquote"><blockquote>“ Proin iaculis purus consequat sem cure  digni ssim
+                donec porttitora entum suscipit aenean rhoncus. ” </blockquote>
+                <p>- Client-Lisa Simpson</p>
+            </div>
+         </div>
     </div>
 </section>
 
-<footer></footer>
+<section class="global-container logos">
+    <div class="logos-container">
+        <div class="logos-item"><img src="img/Envato.png" alt="Envato"></div>
+        <div class="logos-item"><img src="img/WordPress.png" alt="WordPress"></div>
+        <div class="logos-item"><img src="img/Tuts+.png" alt="Tuts+"></div>
+        <div class="logos-item"><img src="img/Microlancer_copy.png" alt="Microlancer"></div>
+    </div>
+</section>
+
+<section class="global-container-team" id="team">
+    <h2>Amazing Team</h2>
+    <p class="subtitle">These wonderful people make work enjoyable.</p>
+   <div class="team-wrapper">
+       <div><img src="img/Clipping_Mask.png" alt="photo">
+            <h3>Kimberly Thompson</h3>
+            <p>Marketer</p>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-pinterest-p"></i>
+        </div>
+        <div><img src="img/Clipping_Mask.png" alt="photo">
+            <h3>Rico Massimo</h3>
+            <p>Coder</p>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+        </div>
+        <div><img src="img/Clipping_Mask.png" alt="photo">
+            <h3>Uku Mason</h3>
+            <p>Graphic Designer</p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-pinterest-p"></i>
+         </div>
+   </div>
+    <p class="text">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit
+        aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+</section>
+
+
+
+<footer id="contact"></footer>
 </body>
 </html>

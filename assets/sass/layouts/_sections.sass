@@ -7,18 +7,35 @@
   @extend .global-container
   justify-content: space-between
   max-width: 940px
-  min-width: 850px
+  @media (min-width: 320px)
+    width: 290px
+  @media (min-width: 411px)
+    width: 390px
+  @media (min-width: 544px)
+    width: 520px
+  @media (min-width: 768px)
+    width: 750px
+  @media (min-width: 992px)
+    width: 850px
+  @media (min-width: 1200px)
+    width: 850px
   padding-top: 80px
   padding-bottom: 80px
   align-items: start
 
 .content-text
   max-width: 555px
+  flex-grow: 1
   p
     font-size: 18px
     line-height: 24px
     letter-spacing: -0.45px
     font-weight: normal
+
+.content-icon
+  flex-basis: 270px
+  width: 100%
+  height: auto
 
 .bg-colored
   background-color: $bg-color
@@ -39,7 +56,6 @@
 
 .content-text-skills
   padding-left: 20px
-  p
   h3
     color: $main-headers-color
     font-size: 22px
@@ -60,9 +76,160 @@
   img
     align-self: center
 
+.clients
+  background-color: $bg-color
+
 .nested-container-clients
-  @extend .nested-container
+  display: flex
+  text-align: center
+  flex-direction: column
   flex-wrap: wrap
+  max-width: 940px
+  @media (min-width: 320px)
+    width: 290px
+  @media (min-width: 411px)
+    width: 390px
+  @media (min-width: 544px)
+    width: 520px
+  @media (min-width: 768px)
+    width: 750px
+  @media (min-width: 992px)
+    width: 850px
+  @media (min-width: 1200px)
+    width: 850px
+  padding-top: 80px
+  padding-bottom: 80px
+
+.content-item-clients
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-top: 40px
+  img
+    flex-basis: 235px
+    width: 100%
+    height: auto
+    margin: 0 20px
+  .blockquote
+    flex-grow: 1
+    background-color: #fff
+    text-align: left
+    blockquote
+      color: $main-text-color
+      font-size: 26px
+      font-weight: 400
+      line-height: 28px
+      letter-spacing: -0.65px
+    p
+      color: #7690c5
+      font-size: 20px
+      font-weight: 400
+      line-height: 36px
+      margin-left: 50px
+
+.reverse
+  order: 2
+
+.logos-container
+  display: flex
+  @media (min-width: 320px)
+    width: 290px
+    flex-wrap: wrap
+  @media (min-width: 411px)
+    width: 390px
+    flex-wrap: wrap
+  @media (min-width: 544px)
+    width: 520px
+    flex-wrap: wrap
+  @media (min-width: 768px)
+    width: 650px
+    flex-wrap: wrap
+  @media (min-width: 895px)
+    width: 750px
+    flex-wrap: wrap
+  @media (min-width: 992px)
+    width: 750px
+  @media (min-width: 1200px)
+    width: 750px
+  justify-content: space-between
+  align-items: center
+
+.logos-item
+  img
+    margin-top: 60px
+    margin-bottom: 60px
+    width: 100%
+    height: auto
+
+.global-container-team
+  display: flex
   justify-content: center
+  flex-direction: column
+  align-items: center
+  background-color: #111
+  padding-top: 80px
+  padding-bottom: 80px
   h2
+   color: $main-inversed-color
+
+.subtitle
+  font-size: 22px
+  letter-spacing: -0.55px
+  color: $main-text-color
+  margin-bottom: 60px
+  margin-top: 0
+
+.team-wrapper
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  @media (min-width: 320px)
+    width: 290px
+  @media (min-width: 411px)
+    width: 390px
+  @media (min-width: 544px)
+    width: 520px
+  @media (min-width: 768px)
+    width: 750px
+  @media (min-width: 992px)
+    width: 850px
+  @media (min-width: 1200px)
+    width: 850px
+  div
+    flex-basis: 30%
+    text-align: center
+    h3
+      color: $main-inversed-color
+      font-size: 18px
+      font-weight: bold
+      letter-spacing: -0.45px
+      margin-bottom: 0
+    p
+      color: #ebebeb
+      font-size: 16px
+      letter-spacing: -0.4px
+      margin-top: 0
+    img
+      max-width: 230px
+      width: 100%
+      height: auto
+
+i.fab
+  min-width: 46px
+  min-height: 40px
+  border: 3px solid #fff
+  border-radius: 50%
+  background-color: transparent
+  color: $main-inversed-color
+  text-align: center
+  line-height: 40px
+  margin: 0 5px
+
+p.text
+  max-width: 700px
+  text-align: center
+  font-size: 20px
+  letter-spacing: -0.5px
+  color: #ebebeb
+  margin-top: 40px
 
